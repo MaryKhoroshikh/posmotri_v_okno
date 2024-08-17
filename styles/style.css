@@ -17,6 +17,9 @@ html {
   font-size: 18px;
   background-color: #1b1919;
   padding-block-start: 1px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 h1,
@@ -40,13 +43,9 @@ ol {
 
 /*мои стили*/
 
-.page {
-  display: flex;
-}
-
 .content {
   width: 100%;
-  height: 534px;
+  height: fit-content;
   margin: auto;
   display: flex;
   gap: 30px;
@@ -56,7 +55,7 @@ ol {
 
 .result {
   width: 711px;
-  height: 456px;
+  height: fit-content;
 }
 
 .result__video-container {
@@ -95,6 +94,8 @@ ol {
 .search-form__label {
   width: fit-content;
   display: flex;
+  justify-content: center;
+  align-content: center;
   margin-inline-end: 15px;
 }
 
@@ -178,10 +179,10 @@ ol {
   align-self: flex-end;
   height: 34px;
   border: 1px solid #fff;
+  cursor: pointer;
 }
 
 .button:hover {
-  cursor: pointer;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 1px;
@@ -211,7 +212,7 @@ ol {
 
 .title {
   margin-block-end: 24px;
-  font-family: Oswald, serif;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 0.94;
@@ -271,7 +272,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald, serif;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 1;
@@ -315,12 +316,4 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
-}
-
-.error-template {
-  font-family: Oswald, serif;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 1.1;
-  text-align: center;
 }
