@@ -40,10 +40,15 @@ ol {
 
 /*мои стили*/
 
+.page {
+  height: 100vh;
+  margin: auto;
+}
+
 .content {
   width: 100%;
   height: 534px;
-  margin: auto;
+  margin: 133px auto;
   display: flex;
   gap: 30px;
   justify-content: center;
